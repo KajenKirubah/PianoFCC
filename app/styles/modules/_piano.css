@@ -1,0 +1,66 @@
+.piano {
+    background-color: #00471b;
+    width: 358px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
+
+    @mixin atSmall {
+        width: 675px;
+    }
+
+    @mixin atMedium {
+        width: 992px;
+    }
+
+    &__keys {
+        background-color: #040404;
+        width: 318px;
+        height: 180px;
+        padding-left: 2px;
+        overflow: hidden;
+
+        @mixin atSmall {
+            width: 633px;
+        }
+        @mixin atMedium {
+            width: 949px;
+        }
+    }
+
+    &__key {
+        background-color: #fff;
+        position: relative;
+        width: 41px;
+        height: 175px;
+        margin: 2px;
+        float: left;
+        border-radius: 0 0 3px 3px;
+    }
+
+    &__key--black {
+
+        &::after {
+            content: "♥";
+            background-color: #1d1e22;
+            position: absolute;
+            left: -18px;
+            width: 32px;
+            height: 100px;
+            border-radius: 0 0 3px 3px;
+        }
+    }
+
+    &__logo {
+        width: 150px;
+        position: absolute;
+        top: 23px;
+        z-index: 1;
+
+        @mixin atSmall {
+            width: 200px;
+        }
+    }
+}

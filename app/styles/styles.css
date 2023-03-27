@@ -1,0 +1,8 @@
+@import './base/_global';
+@import './base/_mixins';
+@import './modules/_piano';
+
+
+h1 {
+    color: blanchedalmond
+}
